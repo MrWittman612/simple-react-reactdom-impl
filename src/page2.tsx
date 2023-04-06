@@ -1,12 +1,10 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Link } from 'react-router-dom'
 
-export default function App() {
-  const [count, setCount] = useState(0)
-
+export default function Page2() {
+  
   return (
     <div className="App">
       <div>
@@ -17,21 +15,13 @@ export default function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React-ts</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <h1>Page 2</h1> 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
     <div className='btn-group'>
-      <Link className='link' to={'page2'}>Page 2</Link>
-      <Link className='link' to={'page3'}>Page 3</Link>
+      <Link className='link' to={'/'}>Home</Link>
+      <Link className='link' to={'/page3'}>Page 3</Link>
     </div>
     </div>
   )
